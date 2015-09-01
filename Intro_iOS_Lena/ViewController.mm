@@ -35,6 +35,24 @@ using namespace std;
     if(image != nil) OpenCV_View_.image = image; // Display the image if it is there....
     else cout << "Cannot read in the file" << endl;
     
+    // 4. (Optional) Read in numbers from a text file (using C++ syntax)
+    /*
+     const char* filename = "lena.png";
+     //NSString *numbersPath = [[NSBundle mainBundle] pathForResource:@"lena" ofType:@"png"];
+     //const char* filename = [numbersPath UTF8String];
+     
+     ifstream inFile(filename);
+     if(inFile.is_open()) {
+     unsigned char n = 0;
+     while(!inFile.eof()) {
+     inFile >> n;
+     cout << n << " ";
+     }
+     cout << endl;
+     }
+     else cout << "Cannot read in lena.png file" << endl;
+     */
+    
     // ALL DONE :)
 }
 
